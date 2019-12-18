@@ -1,7 +1,8 @@
-TypeScript Babel Parser Traverse AST Demo
-=========================================
+TypeScript Babel Parser Generate Code from AST Demo
+===================================================
 
-使用`@babel/traverse`遍历由`@babel/parser`解析出来的AST
+使用`@babel/generator`将生成的AST重新生成为code
+
 
 ```
 npm install

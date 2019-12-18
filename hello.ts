@@ -1,5 +1,6 @@
 import * as parser from "@babel/parser";
 import traverse from "@babel/traverse";
+import generate from "@babel/generator";
 
 const code = `function square(n) {
   return n * n;
@@ -15,3 +16,7 @@ traverse(ast, {
     }
   }
 });
+
+const generated = generate(ast)
+
+console.log(generated.code)
